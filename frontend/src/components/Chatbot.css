@@ -1,0 +1,120 @@
+
+.chat-container {
+    display: flex;
+    width: 1350px;
+    height: 90vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Lịch sử chat */
+.chat-history {
+    width: 25%;
+    background-color: white;
+    padding: 15px;
+    border-right: 2px solid #ddd;
+    overflow-y: auto;
+}
+
+.chat-history h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.history-list {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.history-message {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.history-message.user {
+    background-color: #d1e7ff;
+}
+
+.history-message.bot {
+    background-color: #f1f1f1;
+}
+
+
+.chat-main {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Nội dung chat */
+.chat-box {
+    flex: 1;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chat-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: justify;
+    white-space: 'pre-line'
+}
+
+.chat-message.user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-message.bot {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    border: 1px solid red;
+    width: 100%;
+}
+
+/* Ô nhập tin nhắn */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 2px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
